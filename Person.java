@@ -11,7 +11,7 @@
  	public Person(){
  		this.name = "Unknown";
  		this.hairColor = "Grey";
- 		this.age = "33";
+ 		this.age = 33;
  	}
  	public Person(String name, String hairColor, int age){
  		this.name=name;
@@ -20,16 +20,19 @@
  	}
  	
  	
- 	public void setName(name){
- 		this.name=name;
+ 	public void setName(String name){
+
+		this.name = name;
  	}
  
- 	public void setHairColor(hairColor){
- 		this.hairColor=hairColor;
+ 	public void setHairColor(String hairColor){
+
+		this.hairColor = hairColor;
  	}
  	
- 	public void setAge(age){
- 		this.age=age;
+ 	public void setAge(int age){
+
+		this.age=age;
  	}
  	 	
  	/** getName

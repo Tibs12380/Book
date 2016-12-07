@@ -3,7 +3,7 @@
  *
  */
  
-public Class Player extends Person{
+public class Player extends Person{
 	private String characterClass;
 	private String race;
 	private String gender;
