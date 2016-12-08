@@ -267,10 +267,16 @@ public class Gui extends JFrame implements ActionListener{
                     " you became a respected solider in the kings army.\n The End");
         }
         else if(e.getSource() == carryOn) {
+        	remove(turnBack);
+            remove(goOn);
+            repaint();
             textPane.setText("The wall started to crumble above you. A hundred rocks fall on top of you which cause you to fall off the wall,\n" +
                     "although you survive the fall the falling rolls flatten your body. The End");
         }
         else if(e.getSource() == west) {
+        	remove(north);
+            remove(west);
+            repain();
             textPane.setText("The path started to crumble, and your horse lost its footing sending you into the abyss below.\n" +
                     "As you fall you see a glimmer of light which is reflecting from the gauntlets you are looking for.\n" +
                     "Sadly you don't survive the fall. The End");
