@@ -1,6 +1,7 @@
 //Person.java
 /*
  *
+ *Author Darren Marsh T0018981 
  */
  
  public class Person{
