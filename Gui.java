@@ -1,6 +1,7 @@
 //Gui.java
 /*
  *
+ *Author Darren Marsh T0018981 
  */
 
 import javax.swing.*;
@@ -10,7 +11,8 @@ import java.awt.event.*;
 public class Gui extends JFrame implements ActionListener{
     //creats a JTextArea
     private JTextArea textPane = new JTextArea("Would you like to create a new character?");
-//create buttons
+	
+	//create buttons
     private JButton defaultCharacter = new JButton("Use Default Character");
     private JButton customCharacter = new JButton("Create Custom Character");
     private JButton human = new JButton("Human");
@@ -31,8 +33,10 @@ public class Gui extends JFrame implements ActionListener{
     private JButton carryOn = new JButton("Carry On");
     private JButton goOn = new JButton("Continue");
     private JButton turnBack = new JButton("Turn Back");
+   
     //creates the Container
     private Container pane = getContentPane();
+   
     //intalises the player class
     private Player p1 = new Player();
 

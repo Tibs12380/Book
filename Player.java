@@ -1,6 +1,7 @@
 //Player.java
 /*
  *
+ *Author Darren Marsh T0018981 
  */
  
 public class Player extends Person{
@@ -12,7 +13,7 @@ public class Player extends Person{
 	 *Creates a new player based on default values. called when the user enters no values there there charcter
 	 */
 	public Player(){
-		this.characterClass = "Blade Master";
+		this.characterClass = "Trickster";
 		this.race ="Human";
 		this.gender = "Male"; 
 	}
