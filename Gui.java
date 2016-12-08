@@ -188,7 +188,7 @@ public class Gui extends JFrame implements ActionListener{
             else if(p1.getCharacterClass() == "Trickster"){
                 textPane.setText("You look through you bag to find something to at the troll.\nWithout looking or caring" +
                         "you start to fling items behind you,\n when you turn around with the item you want to throw you notice that the troll  " +
-                        "has a dildo in it month. The troll falls forward forcing the dildo into its brain.");
+                        "has a screwdriver in it month. The troll falls forward forcing the screwdriver into its brain.");
             }
             textPane.append("\nAfter dealing with the troll and losing your horse you notice a ledge that can be climbed down."+
                     "\n Do you climb down?");
@@ -212,7 +212,9 @@ public class Gui extends JFrame implements ActionListener{
                 remove(stayUp);
                 repaint();
                 textPane.setText("You make it to an entrance of a cave.\nDo you enter the cave or do you carry on going down?");
+                enter.addActionListener(this);
                 pane.add(enter);
+                carryOn.addActionListener(this);
                 pane.add(carryOn);
             }
         }
@@ -240,8 +242,8 @@ public class Gui extends JFrame implements ActionListener{
             }
         }
         else if(e.getSource() == goOn) {
-            remove(enter);
-            remove(carryOn);
+            remove(goOn);
+            remove(turnBack);
             repaint();
             if(p1.getAge()>=51){
                 textPane.setText("You hear a voice bellow above you that says you are not \nyoung of heart thus have broken the " +
@@ -249,8 +251,8 @@ public class Gui extends JFrame implements ActionListener{
                         "melts your veins, arteries, organs and bone.\nThe End");
             }
             else{
-                remove(enter);
-                remove(carryOn);
+                remove(goOn);
+                remove(turnBack);
                 repaint();
                 textPane.setText("You enter without a problem, grab the grunalets,and return home a hero.\nThe king" +
                         "makes you the earl of the town and gives you a new house.\nThe End");
